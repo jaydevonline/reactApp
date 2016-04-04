@@ -1,0 +1,164 @@
+// @import "_reset.scss";  // reset css 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700); // feching Roboto fonts from google
+
+
+$fonts : 'Roboto', arial, helvetica, sans-serif ;
+$color-white : #fff ;
+$color-black : #000 ;
+
+$color-one   : #282828 ;
+$color-two   : #6e6e6e ;
+$color-three : #aeaeae ;  // used for borders
+$color-four  : #e6ede8 ;
+$color-five  : #f2f6f3 ;
+$color-six   : #f0c5b0 ;
+$color-seven : #96bdae ;
+$color-eight : #ffd792 ;
+$color-nine  : #98a4bb ; 
+$color-ten   : #24ac79 ;
+$color-eleven: #ffae21 ;  //used for buttons
+
+$border-primary-color : $color-three ;
+
+@mixin border-radius($radius){ // mixin for rounded border
+	border-radius : $radius ;
+}
+
+
+body{
+	font-size : 12px ;
+	line-height : 1 ;
+	font-family: $fonts ;
+	color : $color-two;
+}
+
+h1{
+	font-size : 28px;
+	line-height: 150%;
+	color: $color-one;
+}
+
+h2,
+h3,
+h4,
+h5{
+	color : $color-two;
+}
+
+h2{
+	font-size : 24px;
+	line-height : 140%;
+}
+
+h3{
+	font-size : 18px;
+	line-height : 130%;
+}
+
+h4{
+	font-size : 16px;
+	line-height : 120%;
+}
+
+h5{
+	font-size : 14px;
+	line-height : 110%;
+}
+
+
+.title1{
+	
+}
+
+.title2{
+	
+}
+
+.title3{
+	
+}
+
+.title4{
+	
+}
+
+.title5{
+	
+}
+
+.small{
+	font-size : 10px;
+}
+
+ul,
+ol,
+ul li,
+ol li{
+	list-style-type : none ;
+}
+
+a{
+	color  : $color-two ;
+	text-decoration : none ;
+	display : inline-block ;
+}
+
+
+.btn{
+	display : inline-block;
+	color : $color-white ;
+	background : $color-eleven ;
+	font-weight : normal ;
+}
+
+.btn-large{
+	border-radius : 10px; 
+	font-size : 14px;
+}
+
+.btn-small{
+	border-radius : 5px; 
+	font-size : 12px;
+}
+
+.btn-icon {
+	disply: inline-block ;
+	background: none ;
+	border : none ;
+	font-size : 32px ;	
+	color  : $color-two ;
+	cursor: pointer ;
+}
+
+.btn-icon:disabled {
+	cursor: default;	
+	opacity : 0.6;
+}
+
+.content-tile{
+	border : solid 1px $border-primary-color;
+	margin : 10px;
+	padding: 10px;
+	padding : 10px;
+	@include border-radius(10px);
+}
+
+.content-tile-solid{
+	border : solid 1px $border-primary-color;
+	margin : 10px;
+	padding:10px;
+	background : $color-four;
+	@include border-radius(10px);
+}
+
+.content-box:hover{
+	box-shadow: 1px 1px 1px $color-three;
+}
+
+.wrapper {
+	width : 100% ;
+	min-width : 1366px;
+	max-width : 1800px;
+	margin : 0 auto;
+}

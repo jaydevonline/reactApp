@@ -1,0 +1,29 @@
+header {
+	background : $color-four ; 
+	height : 64px ;
+	width : 100% ;
+	border-bottom : solid 1px $border-primary-color ;
+	box-sizing : border-box ;
+	width:100%;
+}
+
+.header-links{
+	overflow : hidden ;
+    margin : 10px 5px ;
+    padding : 0 ;
+    float : right ;
+}
+
+.header-links li{
+	list-style-type : none ;
+	display : inline-block ;
+}
+
+.header-links a{
+	font-size : 30px ;
+	display : block ;
+	padding : 5px ;
+	margin : 0 5px;
+	text-decoration : none ;
+	color : $color-two; 
+}

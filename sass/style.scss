@@ -1,0 +1,146 @@
+
+@import "_theme.scss" ;
+@import "_common.scss" ;
+@import "_icons.scss" ;
+@import "_header.scss" ;
+@import "_accordion.scss" ;
+
+/* basscss overwrite */
+
+td, th{
+	padding: 1rem 1rem;
+}
+
+/* ----------- */
+
+
+.columns,
+.column-left,
+.column-right {
+	box-sizing : border-box ;
+	min-height : 250px ;
+}
+
+
+.columns{
+	overflow : hidden ;
+	margin-top : 20px ;
+}
+
+.column-left {
+	float :left ;
+	width : 25% ;
+	padding: 15px ;
+	border-right : solid 1px $border-primary-color ;
+}
+
+.column-right {
+	float : left ;
+	width : 75% ;
+	padding : 10px ;
+}
+
+.home-icon{
+	width : 55px ;
+    height : 55px ;
+    margin : 5px ;
+    float : left ;
+}
+
+.breadcrumb a{
+	font-size : 16px;
+}
+
+.breadcrumb .current a{
+	color : $color-ten;
+}
+
+.breadcrumb li:after{
+  content: '/';
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  padding-left: 8px;
+  text-decoration : none ;
+}
+
+.breadcrumb .current:after{
+	content: '';
+}
+
+.custom-table-wrapper{
+	margin : 0 20px 20px 20px;
+	border : solid 1px $border-primary-color;
+	border-radius : 5px;
+}
+
+.custom-table{
+	
+	//border : solid 1px $border-primary-color;
+	font-size : 14px;
+}
+
+
+.custom-table td {
+	border-bottom : solid 1px $border-primary-color;
+}
+
+.custom-table tr:last-child td {
+	border-bottom : none
+}
+
+.custom-table th{
+	background : $color-five ;
+}
+
+.selected{
+	background : $color-seven;
+	color : #fff;
+}
+
+
+.table-tile-toggle-panel{
+	float: right;
+    position: absolute;
+    z-index : 99;
+    right: 30px;
+    margin: 10px;
+}
+
+.tile-view-wrapper{
+	margin : 0 20px 20px 20px;
+	border : solid 1px $border-primary-color;
+	border-radius : 5px;
+}
+
+.tile-view{
+	display : none;
+}
+
+.tiles{
+	overflow : hidden;
+
+	.tile {
+		float: left;
+	    margin: 10px;
+	    width: 200px;
+	    height: 250px;
+	    background: $color-four;
+	    border-radius: 10px;
+	    padding: 10px;
+	    box-sizing: border-box;
+	}
+
+	.tile:hover {
+		box-shadow : 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
+	.avtar-image{
+		margin : 10px auto;
+		height: 100px;
+		width : 100px;
+		border : solid 2px $color-white;
+		overflow : hidden;
+	}
+}
+

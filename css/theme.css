@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+body {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Roboto", arial, helvetica, sans-serif;
+  color: #282828; }
+
+h1 {
+  font-size: 28px;
+  line-height: 150%;
+  color: #282828; }
+
+h2,
+h3,
+h4,
+h5 {
+  color: #6e6e6e; }
+
+h2 {
+  font-size: 24px;
+  line-height: 140%; }
+
+h3 {
+  font-size: 18px;
+  line-height: 130%; }
+
+h4 {
+  font-size: 16px;
+  line-height: 120%; }
+
+h5 {
+  font-size: 14px;
+  line-height: 110%; }
+
+.small {
+  font-size: 10px; }
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #ffae21;
+  font-weight: normal; }
+
+.btn-large {
+  border-radius: 10px;
+  font-size: 14px; }
+
+.btn-small {
+  border-radius: 5px;
+  font-size: 12px; }
+
+.content-tile {
+  border: solid 1px #aeaeae;
+  margin: 10px;
+  padding: 10px;
+  padding: 10px;
+  border-radius: 10px; }
+
+.content-tile-solid {
+  border: solid 1px #aeaeae;
+  margin: 10px;
+  padding: 10px;
+  background: #e6ede8;
+  border-radius: 10px; }
+
+.content-box:hover {
+  box-shadow: 1px 1px 1px #aeaeae; }
+
+.wrapper {
+  width: 100%;
+  min-width: 1366px;
+  max-width: 1800px;
+  margin: 0 auto; }
