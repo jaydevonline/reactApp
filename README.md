@@ -18,7 +18,7 @@
 
 Clone this repo first
 
-Change the directory to nethum-ui
+Change the directory to reactApp
 
 Install "node" if it is not installed already by running the command
 ```
